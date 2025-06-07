@@ -1,8 +1,8 @@
 // lib/main.dart
 
 import 'package:flutter/material.dart';
-// import 'screens/dashboard_screen.dart'; // Tidak lagi langsung ke dashboard
-import 'screens/login_screen.dart'; // <-- IMPORT LoginScreen
+// import 'screens/dashboard_screen.dart'; 
+import 'screens/login_screen.dart'; // 
 import 'utils/app_theme.dart';
 
 void main() {
@@ -16,12 +16,10 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'QR Code', // Atau nama aplikasi Anda
-      theme: AppTheme.luxuriousDarkTheme, // Atau tema default/terang Anda
-      // darkTheme: AppTheme.luxuriousDarkTheme, // Jika Anda punya tema gelap terpisah
-      // themeMode: ThemeMode.system, // Contoh penggunaan theme mode
+      title: 'QR Code', 
+      theme: AppTheme.luxuriousDarkTheme, 
       debugShowCheckedModeBanner: false,
-      home: const LoginScreen(), // <-- UBAH INI ke LoginScreen
+      home: const LoginScreen(),
     );
   }
 }
